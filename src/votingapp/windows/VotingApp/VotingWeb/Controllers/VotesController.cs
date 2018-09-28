@@ -14,15 +14,15 @@ namespace VotingWeb.Controllers
         private readonly HttpClient _httpClient;
         private readonly ILogger _logger;
         private DateTime _timer;
-
-        private static string backendDNSName = Environment.GetEnvironmentVariable("Voting_BackendHostName");
-
-        private static Uri backendUrl = new Uri($"http://{backendDNSName}:{Environment.GetEnvironmentVariable("Voting_BackendHostPort")}/api/votesdata");
+        private static Uri backendUrl;
 
         public VotesController(HttpClient httpClient, ILogger<VotesController> logger)
         {
             _httpClient = httpClient;
             _logger = logger;
+            //string backendDNSName = Environment.GetEnvironmentVariable("Voting_BackendHostName");
+            //backendUrl = new Uri($"http://{backendDNSName}:{Environment.GetEnvironmentVariable("Voting_BackendHostPort")}/api/votesdata");
+            backendUrl = new Uri("http://localhost:49168/api/votesdata");
         }
 
         // GET api/votes
