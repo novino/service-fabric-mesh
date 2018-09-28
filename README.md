@@ -13,7 +13,7 @@ For more details about Service Fabric Mesh public preview in Azure, refer to thi
 
 ## Structure of this repo
 
-This repository has two main folders:
+This repository has two main folders :
 
 - **src** contains source code samples. Some of these are built using the [Visual Studio Tools for Mesh](https://docs.microsoft.com/en-us/azure/service-fabric-mesh/service-fabric-mesh-howto-setup-developer-environment-sdk). Use these samples if you want to build the code from source, publish container images and deploy the app to Mesh.
 
